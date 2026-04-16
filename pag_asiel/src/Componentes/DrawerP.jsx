@@ -116,7 +116,7 @@ export default function PersistentDrawerRight() {
       </AppBar>
       <Main open={open}>
         <DrawerHeader />
-        <Typography sx={{ marginBottom: 2 }}>
+        <Typography sx={{ marginBottom: 2 }} paragraph>
           BUSCAMOS TU CONFORT Y SEGURIDAD
         </Typography>  
         <Typography sx={{ marginBottom: 2 }}>
