@@ -5,20 +5,21 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import SendIcon from '@mui/icons-material/Send';
 import DrawerP from './Componentes/DrawerP';
 import Divider from '@mui/material/Divider';
-import Typography from '@mui/material/Typography'
-//import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@mui/material/Typography';
+import theme from './Componentes/temaConfig';
+import { Navbar } from './Componentes/Navbar';
 
-//const useStyle = makeStyles({
-//  nuevo
-
-//})
 
 function App() {
   
   return (
     <div>
-      <DrawerP />
-      <Divider />
+      <Navbar />
+
+
+      <ThemeProvider theme={theme}>
+
+      
       <Button variant ="contained" color="secondary" endIcon= {<SendIcon />}>
        HELLO 
       </Button>
@@ -30,7 +31,7 @@ function App() {
        otro 
       </Button>
 
-      <Button >
+      <Button>
         MI BOTON PERSONALIZADO
       </Button>
 
@@ -39,8 +40,9 @@ function App() {
      TEXTO 
     </Typography>  
     </div>
-
+    </ThemeProvider>
     </div>
+    
   )
 }
 
